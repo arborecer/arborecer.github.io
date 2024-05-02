@@ -1,0 +1,947 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    text-align: center;
+    height: 100px;
+}
+.hamburguesa {
+    display: none;
+    
+}
+.contenedorNav {
+    display: flex;
+    height: 100px;
+}
+
+.cajaLogo {    
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.cajaLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.elementosNav {
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.botonContacto {
+    font-size: 16px;
+    color: #fff;
+    width: 140px;
+    height: 45px;
+    padding: 8px 14px;
+    border-style: none;
+    border-radius: 5px;
+    background: #FC2AB5;
+}
+
+.contenedorBanner {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px; /* Añadido espacio para mejorar la apariencia */
+}
+
+.tituloBanner {
+    margin-bottom: 20px;
+}
+
+.botonesBanner {
+    display: flex;
+    justify-content: center;
+}
+
+.botonNovedades, .botonContacto {
+    margin-right: 10px;
+}
+
+.contenedorBanner {
+    display: block;
+    width: 100%; /* Cambiado para ocupar el ancho del contenedor */
+    height: 90vh;
+    background-image: url('./assets/fotoBanner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tituloBanner{
+    margin-top: 10%;
+    font-size: 24px;
+    color: #fff;
+}
+.botonesBanner{
+    margin-top: 10%;
+}
+.botonNovedades{
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    width: 140px;
+    height: 22px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: #141414b1;
+    border: 1px solid #cbcaca;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+.botonContactoBanner{
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    width: 140px;
+    height: 24px;
+    padding: 8px 14px;
+    border-style: none;
+    border-radius: 5px;
+    background: #FC2AB5;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#servicios{
+    display: block;
+    height: auto;
+    padding: 30px 0px 30px;
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;    
+}
+.tituloServicios{
+    text-align: center;
+    color: #333;
+}
+
+.containerTarjetas{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta{
+    margin: 5px 5px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 298px;
+    height: 386px;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 5px; 
+    background-color:  #37012c6d; 
+    color: #fff;
+}
+.tarjeta img {
+    max-width: 100%;
+    height: 20%;
+    border-radius: 5px;
+}
+.tarjeta p{
+    margin: 20px 0px 20px;
+}
+.botonTurno{
+    
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    width: 140px;
+    height: 24px;
+    padding: 8px 14px;
+    border-style: none;
+    border-radius: 5px;
+    background: #FC2AB5;
+    justify-content: center;
+    align-items: center;
+}
+#novedades{
+    display: block;
+    height: auto;
+    padding: 30px 0px 30px;
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;
+          
+}
+.containerNov{
+    display: flex;
+}
+.bannerNovedades{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    background-image: url('./assets/fotoBanner.jpeg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bannerNovedades p{
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    line-height: 200%;
+    font-weight: bold;
+}
+.tarjetasNovedades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding: 0px 0px;
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center; 
+}
+.tarjetaNov img {
+    max-width: 100%;
+    height: 20%;
+    border-radius: 5px;
+}
+.tarjetaNov{
+    margin: 5px 5px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 30%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 5px; 
+    background-color:  #376d135c; 
+    color: #fff;
+}
+#nosotros{
+    display: block;
+    height: auto;
+    padding: 0%;
+    padding: 30px 0px 30px;
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;
+}
+.containerNosotros{
+    display: flex; 
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;      
+
+}
+
+.bannerNosotros{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/nosotros.jpeg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerNosotros p{
+    padding-top: 10%;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 200%;
+    font-weight: bold;
+}
+.tarjetaNos img {
+    max-width: 100%;
+    height: 20%;
+    border-radius: 5px;
+}
+.cajaImagenes{
+    margin: 10px 50px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 70%;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 5px; 
+    background-color:  #02279e5c; 
+    color: #fff;
+    
+}
+.containerSlider {
+    position: relative;
+    width: 70%; /* O ajusta el ancho que desees */
+    height: 65vh; /* O ajusta la altura que desees */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    overflow: hidden; /* Para ocultar partes del slider que excedan el contenedor */
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    0%,100% {
+        background-image: url(./assets/5.jpg);
+    }
+    20% {
+        background-image: url(./assets/4.jpg);
+    }
+    40% {
+        background-image: url(./assets/3.jpg);
+    }
+    60% {
+        background-image: url(./assets/2.jpg);
+    }
+    80% {
+        background-image: url(./assets/1.jpg);
+    }
+}
+
+#contacto {
+    display: block;
+    height: auto;
+    padding: 0%;
+    margin-top: 0%;
+}
+
+.containerContacto {
+    display: flex;
+    margin-top: 0%;
+    height: 110vh;
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+}
+
+.botonProfesional {
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #333;
+    line-height: 200%;
+    font-weight: bold;
+}
+
+.botonProfesional ul {
+    list-style: none;
+    padding: 0;
+}
+
+.botonProfesional ul li {
+    margin: 10px 0px;
+}
+
+.botonProfesional a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0px;
+    padding: 8px 14px;
+    border-style: none;
+    border-radius: 5px;
+    background: #e1199fb4;
+    box-shadow: 0px 0px 44px 5px
+}
+
+.botonContactoProf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0px;
+    padding: 8px 14px;
+    border-style: none;
+    border-radius: 5px;
+    background: #FC2AB5;
+}
+
+.botonContactoProf i {
+    margin-left: 10px; /* Espacio entre el nombre y el icono */
+}
+
+.botonContactoProf span {
+    margin-right: auto; /* Empuja el texto al extremo izquierdo */
+}
+
+.botonContactoProf img {
+    width: 20px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Para mantener la proporción original */
+    margin-left: 10px; /* Espacio entre el texto y el icono */
+}
+
+/* Estilo para que los botones tengan el mismo ancho */
+
+
+section {
+    padding: 40px;
+}
+
+#ubicacion{
+    display: block;
+    height: auto;
+    padding: 0%;
+}
+.containerUbicacion{
+    display: flex; 
+    background-image: url('./assets/fondo.png');
+    background-size: contain;
+    background-position: center;      
+
+}
+.bannerUbicacion{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/ubicacion.jpeg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerUbicacion p{
+    padding-top: 10%;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 200%;
+    font-weight: bold;
+}
+.cajaUbicacion{
+    margin: 10px 50px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 50%;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 20px; 
+    background-color:  #07f4ff0d; 
+    color: #fff;
+    
+}
+.conteiner-mapa{
+	border: 10px ;
+	border-radius: 20px;
+}
+#map{
+	height: 400px;
+	width: 100%;
+	box-shadow: inset;
+	border: 10px solid #000;
+	border-radius: 20px;
+}
+
+.supercontenedor{
+	width: 98%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3333333c;
+    color: #fff;
+}
+ /* Reset de estilos para evitar inconsistencias entre navegadores */
+footer, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.containerFooter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.infoContacto,
+.redesSociales {
+    display: grid;
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Estilos para la sección de Información de contacto */
+.infoContacto h3 {
+    color: #FC2AB5; /* Amarillo para resaltar */
+}
+
+.infoContacto p {
+    margin: 10px 0;
+}
+
+/* Estilos para la sección de Redes Sociales */
+.redesSociales h3 {
+    color: #FC2AB5; /* Amarillo para resaltar */
+}
+
+.redesSociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redesSociales li {
+    margin: 10px 0;
+    size: 20px;
+}
+
+.redesSociales a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.redesSociales i {
+    margin-right: 10px;
+}
+
+/* Estilos para la sección de Derechos de autor */
+.derechos {
+    margin-top: 20px;
+}
+
+.derechos p {
+    font-size: 14px;
+}
+
+/* Estilos para los íconos de FontAwesome */
+/* Asegúrate de tener FontAwesome correctamente vinculado en tu proyecto */
+.redesSociales .fab{
+    font-size: 24px;
+    margin-right: 5px;
+    color: #FC2AB5;
+}
+
+/*ICONO FLOTANTE WHATSAPP*/
+.fab{
+    font-size: 50px;
+    color: #fff;
+
+}
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+    margin:5px auto;
+}
+
+.hamburguesa, #check {
+    display: none;
+    cursor: pointer;
+    color:#FC2AB5;
+    font-size: 36px; /* Ajusta el tamaño del icono de hamburguesa */
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical según tu diseño */
+    right: 40px; /* Ajusta la posición horizontal según tu diseño */
+    z-index: 2; /* Añade una capa superior para el icono de hamburguesa */
+}
+
+/* Estilos para dispositivos móviles horizontal */
+@media screen and (max-width: 1100px) {
+    .containerContacto {
+        display: flex;
+        margin-top: 0%;
+        height: auto;
+        background-image: url(./assets/fondo.png);
+        background-size: contain;
+        background-position: center;
+        justify-content: center;
+    }
+
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .elementosNav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable según tu diseño */
+        width: 100%;
+        right: 0; /* Alinea el menú en el margen derecho */
+    }
+    
+
+    
+
+    .tituloBanner {
+        padding-top: 40%;
+        margin-bottom: 20px;
+        padding-bottom: 20%;
+    }
+    .tituloBanner h2{
+        padding-top: 10%;
+        font-size: 24px;
+
+    }
+
+    .tituloServicios h2{
+        padding-top: 20px;
+    }
+    .containerTarjetas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .tarjeta{
+        margin: 5px 5px;
+        padding: 20px 20px;
+        text-align: center;
+        width: 264px;
+        height: 324px;
+        justify-content: space-between;
+        align-items: center;  
+        border-radius: 5px; 
+        background-color:  #37012c6d; 
+        color: #fff;
+    }
+    .tarjeta h3{
+        padding-bottom: 10px;
+    }
+    .tarjeta p{
+        padding-bottom: 10px;
+        margin: 20px 0px 0px;
+    }
+    .containerNov {
+        display: block;
+    }
+
+    .bannerNovedades {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        
+        background-image: url(./assets/fotoBanner.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .tarjetasNovedades {
+        margin-top: 0px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 0px 30px;
+        background-image: url(./assets/fondo.png);
+        background-size: contain;
+        background-position: center;
+    }
+    .tarjetaNov img{
+        max-width: 20%;
+        border-radius: 5px;
+    }
+
+    .tarjetaNov {
+        margin:10px auto;
+        padding: 20px 20px;
+        text-align: center;
+        width: 70%;
+        height: 70%;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #2b5d0a6a;
+        color: #fff;
+    }
+    .tarjetaNov p{
+        margin: 20px 0px 10px;
+        color: #fff;
+    }
+
+    .containerNosotros {
+        display: flex;
+        flex-direction: column-reverse; /* Esto invierte la dirección de los elementos hijos */
+    }
+
+    .bannerNosotros {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/nosotros.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bannerNosotros p {
+        padding-top: 0%;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 200%;
+        font-weight: bold;
+    }
+    .cajaImagenes {
+        margin: 10px 44px;
+        padding: 20px 20px;
+        text-align: center;
+        width: 70%;
+        height: 300px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #02279e5c;
+        color: #fff;
+    }
+    .containerSlider {
+        position: absolute;
+        width: 70%;
+        height: 32vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    
+
+    .containerContacto {
+        display: flex;
+        margin-top: 0%;
+        height: auto;
+        background-image: url(./assets/fondo.png);
+        background-size: contain;
+        background-position: center;
+        justify-content: center;
+    }
+    .containerUbicacion {
+        display: block;
+        background-image: url(./assets/fondo.png);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .bannerUbicacion {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 150px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/ubicacion.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .bannerUbicacion p {
+        padding-top: 0%;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 200%;
+        font-weight: bold;
+    }
+    .cajaUbicacion {
+        margin: auto;
+        padding: 20px 20px;
+        text-align: center;
+        width: 90%;
+        height: 400px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #07f4ff0d;
+        color: #fff;
+    }
+    .infoContacto p {
+        margin: 10px 0;
+        padding: 0px 50px;
+    }
+    
+    /*ICONO FLOTANTE WHATSAPP*/
+    .fab{
+        font-size: 50px;
+        color: #fff;
+
+    }
+    .float{
+	    position:fixed;
+	    width:60px;
+	    height:60px;
+	    bottom:40px;
+	    right:40px;
+	    background-color:#25d366;
+	    color:#FFF;
+	    border-radius:50px;
+	    text-align:center;
+        font-size:30px;
+	    box-shadow: 2px 2px 3px #999;
+        z-index:100;
+    }
+    .float:hover {
+	    text-decoration: none;
+	    color: #25d366;
+        background-color:#fff;
+    }
+
+    .my-float{
+	    margin:5px auto;
+    }
+    /*MENU HAMBURGUESA*/
+
+    .checkbtn{
+        display: block;
+    }    
+
+    .hamburguesa {
+        display: block;
+        cursor: pointer;
+        color:#f00ca4;
+        font-size: 36px; /* Ajusta el tamaño del icono de hamburguesa */
+        position: absolute;
+        top: 20px; /* Ajusta la posición vertical según tu diseño */
+        right: 40px; /* Ajusta la posición horizontal según tu diseño */
+        z-index: 2; /* Añade una capa superior para el icono de hamburguesa */
+    }
+    .elementosNav a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+
+    }
+    
+    .botonContacto {
+        margin-right: 0px;
+        background: none;
+        font-size: 20px;
+    }
+    .elementosNav ul{
+        display: flex;
+        text-align: center;        
+        position: fixed;
+        top: 80px;
+        padding-top: 10%;
+        font-size: 20px;
+        width: 100%;
+        height: 100vh;
+        background: #181818;
+        line-height: 400%;
+        right: 0;
+        
+    }
+
+    .elementosNav ul li{
+        margin:0px 0px 0px 0px;
+    }
+    
+    #check:checked~ .elementosNav ul{
+        left: 0%;
+        transition: all 0.25s;
+    }
+
+        
+    #check:not(:checked)~.elementosNav ul {
+        left: -100%; /* Oculta el menú cuando no está seleccionado */
+        transition: all 0.1s;
+        
+    }
+
+    .elementosNav ul.mostrar {
+        display: flex;
+        text-align: center;        
+        position: fixed;
+        top: 80px;
+        padding-top: 10%;
+        font-size: 20px;
+        width: 100%;
+        height: 100vh;
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/fondomenu.jpeg') ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        line-height: 400%;
+        right: 0;
+    }
+    
+    /* Añade esta regla de estilo al final de tu archivo CSS */
+    body.lock-scroll {
+        overflow: hidden;
+    }
+}
