@@ -96,7 +96,7 @@ nav a {
     display: block;
     width: 100%; /* Cambiado para ocupar el ancho del contenedor */
     height: 90vh;
-    background-image: url('./assets/fotoBanner.jpeg');
+    background-image: url('fotoBanner.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ nav a {
     display: block;
     height: auto;
     padding: 30px 0px 30px;
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;    
 }
@@ -199,7 +199,7 @@ nav a {
     display: block;
     height: auto;
     padding: 30px 0px 30px;
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;
           
@@ -212,7 +212,7 @@ nav a {
     align-items: center;
     text-align: center;
     width: 30%;
-    background-image: url('./assets/fotoBanner.jpeg');
+    background-image: url('fotoBanner.jpeg');
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ nav a {
     justify-content: center;
     width: 70%;
     padding: 0px 0px;
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center; 
 }
@@ -256,13 +256,13 @@ nav a {
     height: auto;
     padding: 0%;
     padding: 30px 0px 30px;
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;
 }
 .containerNosotros{
     display: flex; 
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;      
 
@@ -273,7 +273,7 @@ nav a {
     align-items: center;
     text-align: center;
     width: 40%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/nosotros.jpeg') ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('nosotros.jpeg') ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,19 +326,19 @@ nav a {
 
 @keyframes animate {
     0%,100% {
-        background-image: url(./assets/5.jpg);
+        background-image: url(5.jpg);
     }
     20% {
-        background-image: url(./assets/4.jpg);
+        background-image: url(4.jpg);
     }
     40% {
-        background-image: url(./assets/3.jpg);
+        background-image: url(3.jpg);
     }
     60% {
-        background-image: url(./assets/2.jpg);
+        background-image: url(2.jpg);
     }
     80% {
-        background-image: url(./assets/1.jpg);
+        background-image: url(1.jpg);
     }
 }
 
@@ -353,7 +353,7 @@ nav a {
     display: flex;
     margin-top: 0%;
     height: 110vh;
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;
     justify-content: center;
@@ -433,7 +433,7 @@ section {
 }
 .containerUbicacion{
     display: flex; 
-    background-image: url('./assets/fondo.png');
+    background-image: url('fondo.png');
     background-size: contain;
     background-position: center;      
 
@@ -443,7 +443,7 @@ section {
     align-items: center;
     text-align: center;
     width: 35%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/ubicacion.jpeg') ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('ubicacion.jpeg') ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -625,7 +625,7 @@ footer {
         display: flex;
         margin-top: 0%;
         height: auto;
-        background-image: url(./assets/fondo.png);
+        background-image: url(fondo.png);
         background-size: contain;
         background-position: center;
         justify-content: center;
@@ -698,7 +698,7 @@ footer {
         width: 100%;
         height: 150px;
         
-        background-image: url(./assets/fotoBanner.jpeg);
+        background-image: url(fotoBanner.jpeg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -710,7 +710,7 @@ footer {
         justify-content: center;
         width: 100%;
         padding: 0px 0px 30px;
-        background-image: url(./assets/fondo.png);
+        background-image: url(fondo.png);
         background-size: contain;
         background-position: center;
     }
@@ -747,7 +747,7 @@ footer {
         justify-content: center;
         width: 100%;
         height: 150px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/nosotros.jpeg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(nosotros.jpeg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -785,14 +785,14 @@ footer {
         display: flex;
         margin-top: 0%;
         height: auto;
-        background-image: url(./assets/fondo.png);
+        background-image: url(fondo.png);
         background-size: contain;
         background-position: center;
         justify-content: center;
     }
     .containerUbicacion {
         display: block;
-        background-image: url(./assets/fondo.png);
+        background-image: url(fondo.png);
         background-size: contain;
         background-position: center;
     }
@@ -803,7 +803,7 @@ footer {
         text-align: center;
         width: 100%;
         height: 150px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/ubicacion.jpeg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(ubicacion.jpeg);
         background-size: cover;
         background-position: center;
         background-position-x: center;
@@ -932,7 +932,7 @@ footer {
         width: 100%;
         height: 100vh;
         
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/fondomenu.jpeg') ;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('fondomenu.jpeg') ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
